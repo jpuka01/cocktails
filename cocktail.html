@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="UTF-8">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocktail</title>
+    <link rel="icon" href="./logo.png" type="image/png">
+    <style>
+        /* Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+        body {
+            font-family: "Raleway", sans-serif;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2, h3 {
+            color: #333333;
+            text-align: center;
+        }
+        .cocktail {
+            background-color: #ffffff;
+            border: 1px solid #dddddd;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .cocktail img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+        }
+        .cocktail ul {
+            list-style-type: none;
+            padding: 2px;
+            text-align: center;
+        }
+        .cocktail ul li {
+            margin-right: 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Cocktail Recipes</h1>
+    <div id="cocktails"></div>
+
+    <div id="api-des-deliverables">
+        <h2>API Description</h2>
+        <p><strong>API Name:</strong> TheCocktailDB</p>
+        <p><strong>Website:</strong> This API provides a list of cocktail recipes. Each recipe includes the name of the cocktail, an image of the cocktail, the ingredients, and the instructions to make the cocktail.</p>
+        <p><strong>Website:</strong> <a href="https://www.thecocktaildb.com/api.php" target="_blank">https://www.thecocktaildb.com/api.php</a></p>
+        <p><strong>Parameters Used:</strong> This page uses the <code>s</code> parameter in a GET request to search for cocktails by name. For example, setting <code>s=margarita</code> retrieves all cocktails containing "margarita" in their names.</p>
+        <h3>Potential Applications:</h3>
+        <ul>
+            <li>Creating a cocktail recipe app or website where users can search for drinks by name, ingredients, or category.</li>
+            <li>Developing a bartending guide that helps users find recipes and instructions to make cocktails at home.</li>
+        </ul>
+        <h3>What were the most challenging and most satisfying things about doing this assignment?</h3>
+        <p>The most challenging part of this assignment was understanding how to use the API and parse the JSON data to display the cocktail recipes on the webpage. It required reading the API documentation and experimenting with different parameters to get the desired results.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
